@@ -1,9 +1,9 @@
 /* Set the overall width and center the page */
 body {
   width: 800px;
-  margin: 0 auto;
+  margin: auto;
+  background-color: #fff;
   font-family: Arial, sans-serif;
-  background-color: white;
 }
 
 /* Right column: main content */
@@ -11,7 +11,6 @@ section {
   width: 525px;
   float: right;
   padding: 20px 20px 20px 0;
-  background-color: white;
 }
 
 /* Left column: guest speaker links/images */
@@ -21,30 +20,55 @@ aside {
   padding: 0 0 20px 20px;
 }
 
-/* Footer clears the two floated columns */
+/* Header styles */
+header {
+  background: linear-gradient(to right, #f5cc8d, #d37b4b);
+  padding: 15px 10px 5px 10px;
+  border-bottom: 2px solid #800000;
+}
+
+header h2 {
+  font-size: 20px;
+  margin: 0;
+  color: #800000;
+}
+
+header h3 {
+  font-size: 14px;
+  margin: 5px 0 0;
+  font-style: italic;
+}
+
+/* Footer clears the two floated columns and styles bottom */
 footer {
   clear: both;
-  font-size: 0.8em;
   text-align: center;
-  padding-top: 20px;
-  color: #666;
+  font-size: 12px;
+  color: white;
+  background-color: #800000;
+  padding: 8px;
+  margin-top: 20px;
 }
 
-/* Style the main heading */
-h1 {
-  font-size: 125%;
-  padding-top: 0.5em;
-  padding-bottom: 0.25em;
-  margin: 0;
-  color: maroon;
+/* Style the main heading in section */
+section h1 {
+  font-size: 20px;
+  color: #800000;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #800000;
 }
 
-/* Section subheadings */
-h2 {
-  font-size: 110%;
-  margin-top: 0.5em;
-  margin-bottom: 0.2em;
-  color: black;
+/* Style the h2 in section (e.g., month) */
+section h2 {
+  font-size: 14px;
+  margin: 10px 0 5px;
+}
+
+/* Style the h3 in section (e.g., name) */
+section h3 {
+  font-size: 16px;
+  margin: 0 0 10px;
 }
 
 /* Style the image inside the article */
@@ -55,55 +79,32 @@ section img {
   width: 200px;
 }
 
-/* Style aside speaker images */
-aside img {
-  display: block;
-  margin-bottom: 10px;
-  border: 1px solid black;
-  width: 100px;
-}
-
-/* Speaker links */
+/* Speaker list link styling */
 aside h3 {
-  font-size: 100%;
-  margin: 10px 0 5px 0;
+  font-size: 14px;
+  margin: 10px 0 5px;
 }
 
+aside img {
+  width: 100px;
+  display: block;
+  margin: 5px 0 15px;
+}
+
+/* Speaker name links */
 aside a {
   text-decoration: none;
   font-weight: bold;
   color: #0033cc;
 }
 
-aside a:hover {
-  text-decoration: underline;
+/* Home link at the bottom */
+aside a:last-child {
+  display: block;
+  margin-top: 20px;
 }
 
-/* Add border around main content area */
-main {
-  border: 1px solid maroon;
-  background-color: #fff;
-}
-
-/* Header styles */
-header {
-  background: url(../images/header_back.png) no-repeat;
-  padding: 10px;
-}
-
-header h2 {
-  font-size: 120%;
-  margin: 5px 0 0 0;
-  color: maroon;
-}
-
-header h3 {
-  font-size: 100%;
-  font-style: italic;
-  color: #000;
-  margin: 0;
-}
-
-.shadow {
-  color: orange;
+/* Paragraph spacing */
+p {
+  margin-bottom: 10px;
 }
