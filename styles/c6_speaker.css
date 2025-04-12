@@ -1,39 +1,109 @@
 /* Set the overall width and center the page */
 body {
-	width: 800px;
-	margin: 0 auto;
-  }
-  
-  /* Right column: main content */
-  section {
-	width: 525px;
-	float: right;
-	padding: 20px 20px 20px 0;
-  }
-  
-  /* Left column: guest speaker links/images */
-  aside {
-	width: 215px;
-	float: left;
-	padding: 0 0 20px 20px;
-  }
-  
-  /* Footer clears the two floated columns */
-  footer {
-	clear: both;
-  }
-  
-  /* Style the main heading */
-  h1 {
-	font-size: 150%;
-	padding-top: 0.5em;
-	padding-bottom: 0.25em;
-	margin: 0;
-  }
-  
-  /* Style the image inside the article */
-  section img {
-	float: right;
-	margin: 10px;
-	border: 1px solid black;
-  }
+  width: 800px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: white;
+}
+
+/* Right column: main content */
+section {
+  width: 525px;
+  float: right;
+  padding: 20px 20px 20px 0;
+  background-color: white;
+}
+
+/* Left column: guest speaker links/images */
+aside {
+  width: 215px;
+  float: left;
+  padding: 0 0 20px 20px;
+}
+
+/* Footer clears the two floated columns */
+footer {
+  clear: both;
+  font-size: 0.8em;
+  text-align: center;
+  padding-top: 20px;
+  color: #666;
+}
+
+/* Style the main heading */
+h1 {
+  font-size: 125%;
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+  margin: 0;
+  color: maroon;
+}
+
+/* Section subheadings */
+h2 {
+  font-size: 110%;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  color: black;
+}
+
+/* Style the image inside the article */
+section img {
+  float: right;
+  margin: 10px;
+  border: none;
+  width: 200px;
+}
+
+/* Style aside speaker images */
+aside img {
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 100px;
+}
+
+/* Speaker links */
+aside h3 {
+  font-size: 100%;
+  margin: 10px 0 5px 0;
+}
+
+aside a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #0033cc;
+}
+
+aside a:hover {
+  text-decoration: underline;
+}
+
+/* Add border around main content area */
+main {
+  border: 1px solid maroon;
+  background-color: #fff;
+}
+
+/* Header styles */
+header {
+  background: url(../images/header_back.png) no-repeat;
+  padding: 10px;
+}
+
+header h2 {
+  font-size: 120%;
+  margin: 5px 0 0 0;
+  color: maroon;
+}
+
+header h3 {
+  font-size: 100%;
+  font-style: italic;
+  color: #000;
+  margin: 0;
+}
+
+.shadow {
+  color: orange;
+}
